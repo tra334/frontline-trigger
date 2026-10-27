@@ -1,0 +1,14 @@
+name = "frontline-trigger"
+main = "index.js"
+compatibility_date = "2026-10-01"
+
+[vars]
+GITHUB_REPO = "OWNER/frontlinecontrol"
+WORKFLOW_FILE = "discourse-to-github.yaml"
+GITHUB_REF = "main"
+
+# Runs once an hour as a safety net (the webhook does the instant part).
+[triggers]
+crons = ["0 * * * *"]
+
+# Secrets: npx wrangler secret put GITHUB_TOKEN | DISCOURSE_WEBHOOK_SECRET
