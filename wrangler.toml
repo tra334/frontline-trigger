@@ -3,7 +3,7 @@ main = "index.js"
 compatibility_date = "2026-10-01"
 
 [vars]
-GITHUB_REPO = "OWNER/frontlinecontrol"
+GITHUB_REPO = "tra334/frontlinecontrol"
 WORKFLOW_FILE = "discourse-to-github.yaml"
 GITHUB_REF = "main"
 
